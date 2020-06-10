@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>{{ page.title }} | Shing's Blog</title>
-    <link href="/css/default.css" rel="stylesheet">
+    <link href="{{ "/css/default.css" | relative_url }}" rel="stylesheet">
     {% if page.css %}
-    <link href="{{page.css}}" rel="stylesheet">
+    <link href="{{ page.css | relative_url }}" rel="stylesheet">
     {% endif %}
-    <link href="/css/github.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
     <meta name="description" content="Shing Lyu's blog" />
@@ -47,7 +46,7 @@
       </li>
       {% endfor %}
       <li>
-        <a href="/microblog/feed.xml">RSS</a>
+        <a href="{{ "feed.xml" | relative_url }}">RSS</a>
       </li>
       </ul>
       <p>Last update: {{site.time | date_to_string}}</p>

@@ -5,9 +5,10 @@ markdown: kramdown
 include: [".well-known"]
 description: This is a micro-blog where I write one-liners about random tech stuff I learned.
 url: https://shinglyu.com/microblog/
+baseurl: /microblog
 gems: [jekyll-paginate]
-paginate: 20 
-paginate_path: "/microblog/page:num/"
+paginate: 20
+paginate_path: "/page:num/"
 defaults:
   -
     scope:
