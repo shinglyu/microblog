@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RFC2616 is dead, read RFC723X
-categories: Web
+categories: micro
 date: 2020-06-10 18:32:27 +02:00
 ---
 

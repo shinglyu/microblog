@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check MongoDB index usage statistics
-categories: Web
+categories: micro
 date: 2020-06-10 18:57:50 +02:00
 ---
 
