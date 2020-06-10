@@ -2,13 +2,12 @@
 layout: default
 ---
 <article>
-
    <h1>{{page.title}}</h1>
    <time class="post_time">{{ page.date | date: '%B %d, %Y'}}</time>
   {{ content }}
 </article>
 
-{% include call_to_action_book.html %}
+<!--{% include call_to_action_book.html %} -->
 
 <hr>
 
@@ -23,7 +22,7 @@ layout: default
     {% endfor %}
     <li id="more_posts" >
       <br>
-      <a href="/blog/">(More...)</a><br>
+      <a href="/microblog/">(More...)</a><br>
     </li>
   </ul>
 </nav>
