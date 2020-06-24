@@ -28,12 +28,12 @@ use serde_derive::{Serialize, Deserialize}; // Imports the procedural macros
 struct Foo;
 ```
 
-* However, the `serde` crate [re-exports the `serde_derive::{Serialize, Deserialize}` macros](https://github.com/serde-rs/serde/issues/797), hidden behind the feature flag `derive`:
+* However, the `serde` crate [re-exports the `serde_derive::{Serialize, Deserialize}` macros](https://github.com/serde-rs/serde/issues/797), hidden behind the feature flag `derive`. So if you enable the `derive` feature you can get both the `Serialize`/`Deserialize` traits and procedural macros (i.e., the custom derive) from the `serde` crate by one single `use`:
 
 ```rust
 // Cargo.toml
 [dependencies]
-[serde = { version = "1.0", features = ["derive"] }]
+serde = { version = "1.0", features = ["derive"] }
 
 // src/main.rs or lib.rs
 use serde::{Serialize, Deserialize}; // Imports both the traits and procedural macros
